@@ -1,5 +1,49 @@
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  color: white;
+  background-color: #1d4ed8;
+  padding: 12px;
+  border-radius: 8px;
+  width: 188px;
+  height: 48px;
+}
+
+header {
+  background-image: url("./assets/banner.jpg");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h2{
+    color: white;
+    font-weight: 600px;
+}
+
+p{
+    color: white;
+    padding: 10px;
 }
