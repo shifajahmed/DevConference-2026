@@ -63,8 +63,7 @@ body {
 }
 
 .btn {
-    margin-top: 110px;
-}
+  margin-top: 110px;
 }
 
 .btn-blue:hover {
@@ -144,9 +143,9 @@ body {
   text-align: center;
 }
 
-.hero-container{
-    max-width:720px;
-    margin:0 auto;
+.hero-container {
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .hero-container h1 {
@@ -170,10 +169,10 @@ body {
   padding: 0 40px;
 }
 
-.hero-container p{
-    max-width:650px;
-    margin:20px auto 40px;
-    line-height:1.6;
+.hero-container p {
+  max-width: 650px;
+  margin: 20px auto 40px;
+  line-height: 1.6;
 }
 
 /* card section */
@@ -591,7 +590,6 @@ body {
 .footer {
   width: 100%;
   background-color: #0f172a;
-  margin-top: 0px;
 }
 
 .footer-container {
