@@ -320,7 +320,21 @@ body {
 
 .full-btn {
   width: 100%;
+  padding: 18px 20px;
   text-align: center;
+}
+
+.btn-outline {
+  width: 100%;
+
+  background-color: transparent;
+  color: #111111;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 13px 20px;
 }
 
 /* ai chanalange section */
