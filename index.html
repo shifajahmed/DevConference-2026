@@ -2,77 +2,240 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DevConf 2026 Landing Page Design</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <title>DevConf 2026</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="container">
-    <nav>
-      <div>
-        <img src="./assets/logo.png" alt="DevConf " />
-      </div>
-      <div>
+  <body>
+    <header class="navbar">
+      <div class="logo"><span class="logo-box">DEVCONF</span> 2026</div>
+
+      <nav class="menu">
         <ul>
-          <li><a href="">Speakers</a></li>
-          <li><a href="">Schedule</a></li>
-          <li><a href="">Tracks</a></li>
-          <li><a href="">Venue</a></li>
-          <li><a href="">Blog</a></li>
+          <li><a href="#">Speakers</a></li>
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">Tracks</a></li>
+          <li><a href="#">Venue</a></li>
+          <li><a href="#">Blog</a></li>
         </ul>
-      </div>
-      <div>
-        <a href="#" class="btn">Register Now</a>
-      </div>
-    </nav>
-    <header>
-      <div class="header-content">
-        <h2>Code. <i>Connect</i>. Create</h2>
-        <p>
-          Join 4,000+ engineers, founders, and builders at the premier developer
-          <br />
-          conference of 2026. Three days of cutting-edge talks, hands-on
-          workshops,<br />
-          and meaningful connections.
-        </p>
-        <button class="hero-btn">Register Now</button>
+      </nav>
+
+      <div class="nav-button">
+        <a href="#" class="btn-blue">Explore Now</a>
       </div>
     </header>
 
-    <!-- meet the speacker -->
-    <main class="Speakers">
-      <div class="sp-text">
-        <h3>Meet the Speakers</h3>
+    <section class="hero">
+      <div class="hero-container">
+        <h1>Code. <span class="highlight-text">Connect.</span> Create</h1>
+        <p>
+          Join 4,000+ engineers, founders, and builders at the premier developer
+          conference of 2026. Three days of cutting-edge talks, hands-on
+          workshops, and meaningful connections.
+        </p>
+        <a href="#" class="btn-blue">Register Now</a>
       </div>
+    </section>
 
-      <div class="sp-card">
-        <img src="./assets/andrej.png" alt="" />
-        <p class="pcard">AI / ML</p>
-        <h4>Alex Chen</h4>
-      </div>
+    <!-- speaker section-->
+    <section class="speakers-section">
+      <h2 class="section-title">Meet the Speakers</h2>
 
-      <div class="sp-card">
-        <img src="./assets/demis.png" alt="" />
-        <p class="pcard">Cloud & DevOps</p>
-        <h3>Priya Sharma</h3>
-      </div>
+      <div class="speakers-grid">
+        <!-- Speaker 1 -->
+        <div class="speaker-card">
+          <img
+            src="./assets/andrej.png"
+            alt="Andrej Karpathy"
+            class="speaker-img"
+          />
+          <div class="speaker-info">
+            <span class="track-label label-blue">AI/ML</span>
+            <h3>Andrej Karpathy</h3>
+            <p>Pretraining team, OpenAI</p>
+          </div>
+        </div>
 
-      <div class="sp-card">
-        <img src="./assets/gary.png" alt="" />
-        <p class="pcard">Frontend</p>
-        <h3>Jordan Reyes</h3>
-      </div>
+        <!-- Speaker 2 -->
+        <div class="speaker-card">
+          <img
+            src="./assets/demis.png"
+            alt="Demis Hassabis"
+            class="speaker-img"
+          />
+          <div class="speaker-info">
+            <span class="track-label label-cyan">Cloud & DevOps</span>
+            <h3>Demis Hassabis</h3>
+            <p>Co-Founder and CEO, Google DeepMind</p>
+          </div>
+        </div>
 
-      <div class="sp-card">
-        <img src="./assets/mustafa.png" alt="" />
-        <p class="pcard">Security</p>
-        <h3>Sam Whitfield</h3>
+        <!-- Speaker 3 -->
+        <div class="speaker-card">
+          <img src="./assets/gary.png" alt="Gary Marcus" class="speaker-img" />
+          <div class="speaker-info">
+            <span class="track-label label-blue">Robotics</span>
+            <h3>Gary Marcus</h3>
+            <p>Scientist, Author</p>
+          </div>
+        </div>
+
+        <!-- Speaker 4 -->
+        <div class="speaker-card">
+          <img
+            src="./assets/mustafa.png"
+            alt="Mustafa Suleyman"
+            class="speaker-img"
+          />
+          <div class="speaker-info">
+            <span class="track-label label-blue">AI/ML</span>
+            <h3>Mustafa Suleyman</h3>
+            <p>CEO of Microsoft AI</p>
+          </div>
+        </div>
       </div>
-    </main>
+    </section>
+
+    <!-- pricing section-->
+    <section class="pricing-section">
+      <h2 class="section-title">Secure Your Spot</h2>
+      <p class="section-subtitle">Early bird pricing ends August 15, 2026.</p>
+
+      <div class="pricing-container">
+        <div class="price-card">
+          <span class="plan-type">CONFERENCE</span>
+          <div class="amount">$399</div>
+          <span class="per-tag">per person</span>
+          <ul class="features-list">
+            <li>Access to all conference days</li>
+            <li>Keynotes and session recordings</li>
+            <li>Conference t-shirt</li>
+            <li>Networking lunch & coffee breaks</li>
+            <li>Conference venue map</li>
+            <li>Digital recording (30 days)</li>
+          </ul>
+          <button class="btn-outline">Get Started</button>
+        </div>
+
+        <div class="price-card featured">
+          <span class="plan-type">PRO</span>
+          <div class="amount">$749</div>
+          <span class="per-tag">per person</span>
+          <ul class="features-list">
+            <li>Everything in standard</li>
+            <li>Catered lunch & networking events</li>
+            <li>Speaker meet & greet</li>
+            <li>VIP Networking dinner</li>
+            <li>Lifetime recording access</li>
+            <li>1-on-1 mentoring (30 min)</li>
+          </ul>
+          <button class="btn-blue full-btn">Get Pro</button>
+        </div>
+
+        <div class="price-card">
+          <span class="plan-type">TEAM</span>
+          <div class="amount">$5,999</div>
+          <span class="per-tag">up to 10 people</span>
+          <ul class="features-list">
+            <li>Everything in Pro package</li>
+            <li>Dedicated team alignment row</li>
+            <li>Private workshop booking</li>
+            <li>Company logo shared on page</li>
+            <li>Recruitment booth (1 day)</li>
+            <li>Priority customer support</li>
+          </ul>
+          <button class="btn-outline">Contact Us</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- chalange section-->
+    <section class="faq-section">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">
+        Quick answers to your most common questions.
+      </p>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>When and where is DevConf 2026 taking place?</h4>
+          <p>
+            DevConf 2026 will be held from August 25-27, 2026, at the Grand
+            Convention Center, featuring both main stage tracks and hands-on
+            workshops.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h4>Will the sessions be recorded for pass holders?</h4>
+          <p>
+            Yes, all keynotes and main track sessions are recorded. Access
+            duration depends on your ticket type (30 days for Conference,
+            lifetime for Pro/Team).
+          </p>
+        </div>
+        <div class="faq-item">
+          <h4>Are there team discounts available?</h4>
+          <p>
+            Absolutely! Our Team Pass offers a massive discount for up to 10
+            attendees, along with exclusive benefits like dedicated seating and
+            recruitment perks.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h4>Can I upgrade my ticket later?</h4>
+          <p>
+            Yes, you can upgrade from a Conference Pass to a Pro Pass at any
+            time before August 20, 2026, by visiting your profile link, subject
+            to availability.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section-->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="logo"><span class="logo-box">DEVCONF</span> 2026</div>
+        <div class="social-icons">
+          <!-- Twitter Icon -->
+          <a href="#"
+            ><svg
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M24 4.56v.03c-.88.39-1.83.65-2.83.77a4.92 4.92 0 002.16-2.72c-.95.56-2 .97-3.13 1.2a4.92 4.92 0 00-8.38 4.48A13.98 13.98 0 011.67 3.15a4.93 4.93 0 001.52 6.57c-.8-.03-1.57-.25-2.24-.62v.06a4.92 4.92 0 003.95 4.83c-.72.2-1.48.23-2.22.08a4.93 4.93 0 004.6 3.42A9.87 9.87 0 010 19.54a13.94 13.94 0 007.55 2.21c9.06 0 14-7.5 14-14 0-.21 0-.43-.02-.64A10 10 0 0024 4.56z"
+              /></svg
+          ></a>
+          <!-- LinkedIn Icon -->
+          <a href="#"
+            ><svg
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.79 1.76-1.75 1.76zm13.5 12.27h-3v-5.6c0-3.37-4-3.12-4 0v5.6h-3v-11h3v1.77c1.4-2.58 7-2.77 7 2.47v6.76z"
+              /></svg
+          ></a>
+          <!-- GitHub Icon -->
+          <a href="#"
+            ><svg
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.234c-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22v3.293c0 .319.22.694.825.576C20.565 21.795 24 17.3 24 12c0-6.63-5.37-12-12-12z"
+              /></svg
+          ></a>
+        </div>
+      </div>
+      <hr class="footer-line" />
+      <p class="copyright">© 2026 DevConf. All rights reserved.</p>
+    </footer>
   </body>
 </html>
