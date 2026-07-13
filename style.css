@@ -2,48 +2,73 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
   background-color: #ffffff;
   color: #111111;
-  min-width: 1200px;
+  width: 100%;
 }
 
 /* Common Buttons */
+.hero {
+  width: 100%;
+  height: 650px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
+    url("./assets/banner.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-container {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-container h1 {
+  font-size: 64px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.hero-container h1 .highlight-text {
+  font-style: italic;
+}
+
+.hero-container p {
+  max-width: 650px;
+  margin: 0 auto 45px;
+  font-size: 16px;
+  line-height: 0.5;
+  color: #d1d5db;
+}
+
 .btn-blue {
+  display: inline-block;
   background-color: #1d4ed8;
   color: #ffffff;
-  padding: 12px 26px;
-  border-radius: 6px;
   text-decoration: none;
+  font-size: 16px;
   font-weight: 600;
-  font-size: 14px;
-  display: inline-block;
-  border: none;
-  cursor: pointer;
+  padding: 16px 38px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn {
+    margin-top: 110px;
+}
 }
 
 .btn-blue:hover {
   background-color: #1e40af;
-}
-
-.btn-outline {
-  background: transparent;
-  color: #111111;
-  border: 1px solid #bcbcbc;
-  padding: 12px;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 14px;
-  cursor: pointer;
-  width: 100%;
-}
-
-.btn-outline:hover {
-  background-color: #f3f4f6;
 }
 
 /* Headings Component */
@@ -65,7 +90,8 @@ body {
 
 /* nav section */
 .navbar {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px 0;
   display: flex;
@@ -118,8 +144,9 @@ body {
   text-align: center;
 }
 
-.hero-container {
-  width: 800px;
+.hero-container{
+    max-width:720px;
+    margin:0 auto;
 }
 
 .hero-container h1 {
@@ -143,10 +170,17 @@ body {
   padding: 0 40px;
 }
 
+.hero-container p{
+    max-width:650px;
+    margin:20px auto 40px;
+    line-height:1.6;
+}
+
 /* card section */
 .speakers-section {
   margin-top: 80px;
-  width: 1100px;
+  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -205,7 +239,8 @@ body {
 /* price section */
 
 .pricing-section {
-  width: 1100px;
+  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -354,7 +389,8 @@ body {
 
 /* Fixed Dashboard Grid Layout (No Media Queries Needed) */
 .achievements-grid {
-  width: 1100px;
+  max-width: 1100px;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 346px); /* ফিক্সড কলাম উইডথ */
@@ -553,11 +589,15 @@ body {
 
 /*footer section */
 .footer {
-  width: 1100px;
+  width: 100%;
+  background-color: #0f172a;
+  margin-top: 0px;
+}
+
+.footer-container {
+  max-width: 1100px;
   margin: 0 auto;
   padding: 60px 0 30px;
-  background-color: #0d1b2a;
-  margin-top: 80px;
 }
 
 .footer-top {
@@ -568,7 +608,7 @@ body {
 
 .social-icons {
   display: flex;
-  gap: 20px;
+  gap: 24px;
 }
 
 .social-icons a {
@@ -579,11 +619,11 @@ body {
 
 .footer-line {
   border: none;
-  border-top: 1px solid #4b5563;
+  border-top: 1px solid #334155;
   margin: 25px 0;
 }
 
 .copyright {
-  color: #9ca3af;
+  color: #94a3b8;
   font-size: 14px;
 }
