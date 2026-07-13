@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <title>DevConf 2026</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <header class="navbar">
-      <div class="logo"><span class="logo-box">DEVCONF</span> 2026</div>
+      <div class="logo">
+        <img src="./assets/logo.png" alt="" srcset="" />
+      </div>
 
       <nav class="menu">
         <ul>
@@ -20,7 +26,7 @@
       </nav>
 
       <div class="nav-button">
-        <a href="#" class="btn-blue">Explore Now</a>
+        <a href="#" class="btn-blue">Register Now</a>
       </div>
     </header>
 
@@ -149,92 +155,187 @@
     </section>
 
     <!-- chalange section-->
-    <section class="faq-section">
-      <h2 class="section-title">Frequently Asked Questions</h2>
-      <p class="section-subtitle">
-        Quick answers to your most common questions.
-      </p>
+    <section
+      id="dev-achievements"
+      class="achievements-section"
+      aria-labelledby="achievements-title"
+    >
+      <div class="achievements-header">
+        <span class="badge-pill">Ecosystem Spotlight</span>
+        <h2 id="achievements-title" class="section-title-premium">
+          Open Source Hall of Fame
+        </h2>
+        <p class="section-subtitle-premium">
+          Celebrating the developer-led projects and open-source pioneers
+          shaping the future of global technology at DevConf 2026.
+        </p>
+      </div>
 
-      <div class="faq-grid">
-        <div class="faq-item">
-          <h4>When and where is DevConf 2026 taking place?</h4>
-          <p>
-            DevConf 2026 will be held from August 25-27, 2026, at the Grand
-            Convention Center, featuring both main stage tracks and hands-on
-            workshops.
-          </p>
-        </div>
-        <div class="faq-item">
-          <h4>Will the sessions be recorded for pass holders?</h4>
-          <p>
-            Yes, all keynotes and main track sessions are recorded. Access
-            duration depends on your ticket type (30 days for Conference,
-            lifetime for Pro/Team).
-          </p>
-        </div>
-        <div class="faq-item">
-          <h4>Are there team discounts available?</h4>
-          <p>
-            Absolutely! Our Team Pass offers a massive discount for up to 10
-            attendees, along with exclusive benefits like dedicated seating and
-            recruitment perks.
-          </p>
-        </div>
-        <div class="faq-item">
-          <h4>Can I upgrade my ticket later?</h4>
-          <p>
-            Yes, you can upgrade from a Conference Pass to a Pro Pass at any
-            time before August 20, 2026, by visiting your profile link, subject
-            to availability.
-          </p>
-        </div>
+      <div class="achievements-grid">
+        <!-- Card 1: Main Feature (Spans 2 columns) -->
+        <article class="achievement-card feature-card">
+          <div class="card-glow"></div>
+          <div class="card-content">
+            <div class="card-header-meta">
+              <span class="tag-glow tag-purple">Framework of the Year</span>
+              <span
+                class="project-stars"
+                aria-label="142 thousand stars on GitHub"
+                >★ 142k</span
+              >
+            </div>
+            <h3 class="project-title">HyperionJS Core</h3>
+            <p class="project-desc">
+              The next-generation, edge-native micro-frontend architecture
+              designed to completely replace massive monolithic build steps with
+              instant runtime compilation.
+            </p>
+
+            <div class="contributor-profile">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150"
+                alt="Sarah Jenkins"
+                class="avatar"
+              />
+              <div class="contributor-info">
+                <span class="contributor-name">Sarah Jenkins</span>
+                <span class="contributor-role">Lead Core Maintainer</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Technical Project -->
+        <article class="achievement-card">
+          <div class="card-glow"></div>
+          <div class="card-content">
+            <div class="card-header-meta">
+              <span class="tag-glow tag-blue">Rust Tooling</span>
+              <span
+                class="project-stars"
+                aria-label="38 thousand stars on GitHub"
+                >★ 38k</span
+              >
+            </div>
+            <h3 class="project-title">Oxidized DB</h3>
+            <p class="project-desc">
+              A blazing fast embedded vector storage model optimized exclusively
+              for local LLM inference engines with sub-millisecond response
+              guarantees.
+            </p>
+            <div class="metric-row">
+              <span class="metric-value">0.4ms</span>
+              <span class="metric-label">Avg Query Latency</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Technical Project -->
+        <article class="achievement-card">
+          <div class="card-glow"></div>
+          <div class="card-content">
+            <div class="card-header-meta">
+              <span class="tag-glow tag-emerald">DevOps & Green</span>
+              <span
+                class="project-stars"
+                aria-label="52 thousand stars on GitHub"
+                >★ 52k</span
+              >
+            </div>
+            <h3 class="project-title">EcoKube Agent</h3>
+            <p class="project-desc">
+              Dynamic Kubernetes autoscaler that targets optimal cluster scaling
+              patterns strictly against direct local green energy grids and low
+              carbon windows.
+            </p>
+            <div class="metric-row">
+              <span class="metric-value">-34%</span>
+              <span class="metric-label">Carbon Efficiency</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: Community Contribution -->
+        <article class="achievement-card">
+          <div class="card-glow"></div>
+          <div class="card-content">
+            <div class="card-header-meta">
+              <span class="tag-glow tag-amber">Web Security</span>
+              <span
+                class="project-stars"
+                aria-label="19 thousand stars on GitHub"
+                >★ 19k</span
+              >
+            </div>
+            <h3 class="project-title">AuthShield WebAuthn</h3>
+            <p class="project-desc">
+              Zero-dependency, production-ready WebAuthn integration kits to
+              remove passwords from standard application setups natively.
+            </p>
+            <div class="contributor-profile">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150"
+                alt="Marcus Chen"
+                class="avatar"
+              />
+              <div class="contributor-info">
+                <span class="contributor-name">Marcus Chen</span>
+                <span class="contributor-role">Security Lead</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5: Community Contribution -->
+        <article class="achievement-card">
+          <div class="card-glow"></div>
+          <div class="card-content">
+            <div class="card-header-meta">
+              <span class="tag-glow tag-pink">Data Engine</span>
+              <span
+                class="project-stars"
+                aria-label="64 thousand stars on GitHub"
+                >★ 64k</span
+              >
+            </div>
+            <h3 class="project-title">FluxGraphQL</h3>
+            <p class="project-desc">
+              Real-time reactive graph layer offering predictive data cache
+              fetching layers for hyper-interactive distributed systems
+              interfaces.
+            </p>
+            <div class="contributor-profile">
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150"
+                alt="Elena Rostova"
+                class="avatar"
+              />
+              <div class="contributor-info">
+                <span class="contributor-name">Elena Rostova</span>
+                <span class="contributor-role">OSS Contributor</span>
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
     <!-- footer section-->
-    <footer class="footer">
+    <footer class="footer bg">
       <div class="footer-top">
-        <div class="logo"><span class="logo-box">DEVCONF</span> 2026</div>
+        <div class="logo">
+          <img src="./assets/footer-logo.png" alt="" srcset="">
+        </div>
+
         <div class="social-icons">
-          <!-- Twitter Icon -->
-          <a href="#"
-            ><svg
-              width="20"
-              height="20"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M24 4.56v.03c-.88.39-1.83.65-2.83.77a4.92 4.92 0 002.16-2.72c-.95.56-2 .97-3.13 1.2a4.92 4.92 0 00-8.38 4.48A13.98 13.98 0 011.67 3.15a4.93 4.93 0 001.52 6.57c-.8-.03-1.57-.25-2.24-.62v.06a4.92 4.92 0 003.95 4.83c-.72.2-1.48.23-2.22.08a4.93 4.93 0 004.6 3.42A9.87 9.87 0 010 19.54a13.94 13.94 0 007.55 2.21c9.06 0 14-7.5 14-14 0-.21 0-.43-.02-.64A10 10 0 0024 4.56z"
-              /></svg
-          ></a>
-          <!-- LinkedIn Icon -->
-          <a href="#"
-            ><svg
-              width="20"
-              height="20"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.76s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.79 1.76-1.75 1.76zm13.5 12.27h-3v-5.6c0-3.37-4-3.12-4 0v5.6h-3v-11h3v1.77c1.4-2.58 7-2.77 7 2.47v6.76z"
-              /></svg
-          ></a>
-          <!-- GitHub Icon -->
-          <a href="#"
-            ><svg
-              width="20"
-              height="20"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.234c-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22v3.293c0 .319.22.694.825.576C20.565 21.795 24 17.3 24 12c0-6.63-5.37-12-12-12z"
-              /></svg
-          ></a>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-github"></i>
         </div>
       </div>
+
       <hr class="footer-line" />
+
       <p class="copyright">© 2026 DevConf. All rights reserved.</p>
     </footer>
   </body>
