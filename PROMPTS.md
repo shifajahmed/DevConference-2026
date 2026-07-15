@@ -1,13 +1,11 @@
 # AI Prompt – DevConf 2026
 
-## Section Name
-
 **Open Source Hall of Fame**
 
 ## Prompt Used
 
 ```text
-Act as a senior front-end developer and UI/UX designer with 20 years of experience.
+Act as a senior front-end developer and UI/UX designer with 3 years of experience.
 
 I am building a modern developer conference landing page called "DevConf 2026" using only HTML and CSS (no JavaScript or frameworks).
 
